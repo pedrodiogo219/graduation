@@ -1,0 +1,16 @@
+discretos:
+
+
+metodos minimos quadrados :
+	aproximar funcoes, minimizar a somatória dos erros
+	
+	se eu tenho n pontos vou ter um polinomio de grau até (n-1)
+	
+
+interpolação:
+	polinomios de lagrange
+	
+	a funcao gerada passa exatamente encima dos pontos
+	só pro caso discreto
+	
+	
