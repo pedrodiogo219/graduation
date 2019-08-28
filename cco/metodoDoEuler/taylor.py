@@ -45,7 +45,7 @@ def plota(x, y, mx, ms):
 
 def main():
     a, b = 0, 0.3
-    h = 0.1
+    h = 0.01
     y0 = 2
 
     x, y, s = taylor(a, b, h, y0)
