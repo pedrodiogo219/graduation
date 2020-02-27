@@ -8,10 +8,10 @@ pygame.display.flip()
 
 white=(255,255,255)
 
-#Esta funcao funciona apenas 
+#Esta funcao funciona apenas
 #para o primeiro quadrante
 def bresenham(x1,y1,x2,y2):
-	
+
 	#carrega no fb o pixel (x1,y1)
 	screen.set_at((x1,y1),white)
 	#computa os deltas necessarios
@@ -22,11 +22,11 @@ def bresenham(x1,y1,x2,y2):
 	pant  = dy2 - dx
 	x = x1
 	y = y1
-	
+
 	for i in range(dx):
 		if pant < 0:
 			screen.set_at((x+1,y),white)
-			pant = pant + dy2 
+			pant = pant + dy2
 		else:
 			screen.set_at((x+1,y+1),white)
 			pant = pant + dydx2

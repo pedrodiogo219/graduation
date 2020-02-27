@@ -1,11 +1,9 @@
 from numpy import random, round
-from queue import Queue
 import configparser
 import os
 from Cliente import Cliente
 from Aleatorio import Aleatorio
 from Servidor import Servidor
-import numpy.random as r
 from statistics import mean
 
 
