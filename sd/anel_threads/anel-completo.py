@@ -60,7 +60,8 @@ class Anel:
         self.threads = [myThread(i) for i in range(0, n)]
         for i in range(0, n-1):
             self.threads[i].setNext(self.threads[i+1])
-            self.threads[n-1].setNext(self.threads[0])
+        
+        self.threads[n-1].setNext(self.threads[0])
 
 
     def start(self, text):
@@ -73,7 +74,7 @@ class Anel:
             t.join()
 
 def main():
-    anel = Anel(3)
+    anel = Anel(30)
 
     text = input('Digite uma string:\n')
     

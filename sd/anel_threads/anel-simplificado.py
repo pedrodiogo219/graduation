@@ -8,9 +8,9 @@ class myThread (threading.Thread):
         threading.Thread.__init__(self)
         self.id = id
         self.awake = False
+        self.finished = False
         self.text = ''
         self.next = None
-        self.finished = False
 
     def setNext(self, next):
         self.next = next
